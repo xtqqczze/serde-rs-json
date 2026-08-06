@@ -45,7 +45,6 @@ use std::iter;
 use std::marker::PhantomData;
 use std::mem;
 use std::str::FromStr;
-use std::{f32, f64};
 
 macro_rules! treemap {
     () => {
@@ -2169,8 +2168,8 @@ fn test_partialeq_number() {
         u8::MIN u8::MAX u16::MIN u16::MAX u32::MIN u32::MAX u64::MIN u64::MAX
         f32::MIN f32::MAX f32::MIN_EXP f32::MAX_EXP f32::MIN_POSITIVE
         f64::MIN f64::MAX f64::MIN_EXP f64::MAX_EXP f64::MIN_POSITIVE
-        f32::consts::E f32::consts::PI f32::consts::LN_2 f32::consts::LOG2_E
-        f64::consts::E f64::consts::PI f64::consts::LN_2 f64::consts::LOG2_E
+        std::f32::consts::E std::f32::consts::PI std::f32::consts::LN_2 std::f32::consts::LOG2_E
+        std::f64::consts::E std::f64::consts::PI std::f64::consts::LN_2 std::f64::consts::LOG2_E
     );
 }
 

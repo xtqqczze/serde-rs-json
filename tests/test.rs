@@ -2,6 +2,7 @@
     clippy::assertions_on_result_states,
     clippy::byte_char_slices,
     clippy::cast_precision_loss,
+    clippy::clone_on_copy,
     clippy::derive_partial_eq_without_eq,
     clippy::excessive_precision,
     clippy::float_cmp,
